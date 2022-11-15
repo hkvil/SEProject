@@ -18,6 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/tambahsewa-style.css">
     <link rel="stylesheet" type="text/css" href="css/profile-style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
     <style type="text/css">
         .maps .container-map {
             height: 400px;
@@ -45,13 +46,13 @@
 <body>
 
     <header>
-        <h2><a href=" #">Futsal Srikandi</a></h2>
-        <nav>
+        <h2><a href=" #" style="font-family: 'Poppins', sans-serif;">Gor Badminton PITOE</a></h2>
+        <nav style="font-family: 'Poppins', sans-serif;">
             <li><a href="/">Home</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#maps">Lokasi</a></li>
-            <li><a href="#newsletter">Jadwal</a></li>
-            <li><a href="#contact">Kontak</a></li>
+            <li><a href="#newsletter">Cek Jadwal</a></li>
+            <li><a href="#contact">Contact</a></li>
         </nav>
     </header>
 
@@ -59,50 +60,11 @@
     <section class="banner-area">
         <div class="img-area"></div>
         <div class="banner-text">
-            <h1>Futsal Srikandi</h1>
+            <h2 class="font-italic" style="font-size: 35px; font-family: 'Poppins', sans-serif;">Booking Lapangan Badminton <br>Jadi Lebih Praktis</h2>
             <!-- <h3>Make it Easy...</h3> -->
             <!-- <a href="/home" class="btn">Get Started</a> -->
         </div>
-        <div class="stat" id="stat">
-            <div class="content-box">
-                <br><br>
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-users"></i>
-                                <h2><span class="counter text-counter">800</span><span>+</span>
-                                </h2>
-                                <p>Pengguna</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-futbol"></i>
-                                <h2><span class="counter text-counter">3</span>
-                                </h2>
-                                <p>Lapangan</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-tshirt"></i>
-                                <h2><span class="counter text-counter">40</span>
-                                </h2>
-                                <p>Items</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-clock"></i>
-                                <h2><span class="counter text-counter">48</span><span>+</span>
-                                </h2>
-                                <p>Jadwal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        
     </section>
 
     <section class="services-area" id="services">
@@ -114,14 +76,14 @@
                     <i class="fas fa-map"></i>
                 </div>
                 <h2>Lapangan</h2>
-                <p>Menyediakan layanan booking lapangan futsal untuk kegiatan berolahraga anda</p>
+                <p>Menyediakan layanan sewa lapangan badminton untuk kegiatan berolahraga anda</p>
             </div>
             <div class="single-service">
                 <div class="icon-area">
                     <i class="fas fa-calendar-alt"></i>
                 </div>
                 <h2>Event Turnamen</h2>
-                <p>Memberikan layanan dan harga terbaik untuk anda yang akan mengadakan acara serta turnamen olahraga
+                <p>Memberikan layanan dan harga terbaik untuk anda yang ingin mengadakan turnamen badminton
                 </p>
             </div>
             <div class="single-service">
@@ -135,8 +97,7 @@
     </section>
 
     <section class="maps" id="maps">
-        <h3 class="header-text">Srikandi Venue</h3>
-        <p>Lokasi Futsal Srikandi tersebar pada beberapa lokasi </p>
+        <h3 class="header-text" style="padding-bottom: 25px">LOKASI GOR PITOE</h3>
         <div class="container-map">
             <?php
 			$dump = json_encode($dump, true);
@@ -170,25 +131,25 @@
 
 				<div class="keterangan">
 					<div class="sudah_booking"></div>
-					<h4 class="dif" style="color: white;">Sudah Booking</h4>			
+					<h4 class="dif" style="color: white;">Sudah Dibooking</h4>			
 				</div>
 				<div class="keterangan">
 					<div class="belum_booking"></div>
-					<h4 style="color: white;">Belum Booking</h4>			
+					<h4 style="color: white;">Masih Kosong</h4>			
 				</div>
     </section>
 
     <section class="contact" id="contact">
         <h3 class="header-text">Hubungi Kami</h3>
-        <p>Untuk info booking dan pemesanan silahkan hubungi kami</p>
+        <p>Untuk booking dan pemesanan silahkan hubungi kami</p>
         <div class="content-area">
             <div class="single-contact">
                 <i class="fa fa-map-marker"></i>
-                <p>Jl. Pelita I, Labuhan Ratu <br> Bandar Lampung, Lampung</p>
+                <p>Jl. Ir H. Juanda No.95, Cemp. Putih, Kec. Ciputat Tim.,  <br> Kota Tangerang Selatan, Banten 15412</p>
                 <i class="fa fa-envelope"></i>
-                <p>futsal@srikandi.com</p>
+                <p>pitoe.21@mhs.uinjkt.ac.id</p>
                 <i class="fa fa-phone"></i>
-                <p>+628 1411 15543</p>
+                <p>081280502642</p>
             </div>
 
             <div class="single-contact">
@@ -200,7 +161,7 @@
     </section>
 
     <footer>
-        <p>All Right reserved by &copy; <a href="#">Team Basing Aja 2020</a></p>
+        <p>All Right reserved by &copy; Kelompok X RPL</p>
     </footer>
 
     <script type="text/javascript">
