@@ -8,14 +8,14 @@
     <!-- Vue JS -->
     <script type="text/javascript" src="js/vue/vue.js"></script>
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <!-- Popper JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
     <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    
     <link rel="stylesheet" href="css/tambahsewa-style.css">
     <link rel="stylesheet" type="text/css" href="css/profile-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
@@ -44,17 +44,41 @@
 </head>
 
 <body>
-
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand h1" href="#">Hidden brand</a>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+        </nav>
     <header>
-        <h2><a href=" #" style="font-family: 'Poppins', sans-serif;">Gor Badminton PITOE</a></h2>
+        <!-- <h2><a href=" #" style="font-family: 'Poppins', sans-serif;">Gor Badminton PITOE</a></h2>
         <nav style="font-family: 'Poppins', sans-serif;">
             <li><a href="/">Home</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#maps">Lokasi</a></li>
             <li><a href="#newsletter">Cek Jadwal</a></li>
             <li><a href="#contact">Contact</a></li>
-        </nav>
+        </nav> -->
+        
     </header>
+    
 
 
     <section class="banner-area">
@@ -67,8 +91,8 @@
         
     </section>
 
-    <section class="services-area" id="services">
-        <h3 class="header-text">Layanan Kami</h3>
+    <section class="services-area" id="services" style="font-family: 'Poppins', sans-serif;">
+        <h3 class="header-text" >Layanan Kami</h3>
         <p>Kami Menyediakan Layanan & Venue Olahraga Terbaik Untuk Anda </p>
         <div class="content-area">
             <div class="single-service">
@@ -91,12 +115,12 @@
                     <i class="fas fa-dumbbell"></i>
                 </div>
                 <h2>Perlengkapan Olahraga</h2>
-                <p>Menyediakan perlengakapan olahraga dengan kualitas terbaik demi kenyamanan anda</p>
+                <p>Menyediakan perlengkapan olahraga dengan kualitas terbaik demi kenyamanan anda</p>
             </div>
         </div>
     </section>
 
-    <section class="maps" id="maps">
+    <section class="maps" id="maps" style="font-family: 'Poppins', sans-serif;">
         <h3 class="header-text" style="padding-bottom: 25px">LOKASI GOR PITOE</h3>
         <div class="container-map">
             <?php
@@ -110,7 +134,7 @@
         </div>
     </section>
 
-    <section class="newsletter" id="newsletter">
+    <section class="newsletter" id="newsletter" style="font-family: 'Poppins', sans-serif;">
                 <h3 class="header-text" style="color: white;">SCHEDULE</h3>
                     <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
                                                         echo date("Y-m-d"); ?>" onchange="getJSON()" />
@@ -139,7 +163,7 @@
 				</div>
     </section>
 
-    <section class="contact" id="contact">
+    <section class="contact" id="contact" style="font-family: 'Poppins', sans-serif;">
         <h3 class="header-text">Hubungi Kami</h3>
         <p>Untuk booking dan pemesanan silahkan hubungi kami</p>
         <div class="content-area">
@@ -147,14 +171,14 @@
                 <i class="fa fa-map-marker"></i>
                 <p>Jl. Ir H. Juanda No.95, Cemp. Putih, Kec. Ciputat Tim.,  <br> Kota Tangerang Selatan, Banten 15412</p>
                 <i class="fa fa-envelope"></i>
-                <p>pitoe.21@mhs.uinjkt.ac.id</p>
+                <p>pitoe.badminton21@mhs.uinjkt.ac.id</p>
                 <i class="fa fa-phone"></i>
                 <p>081280502642</p>
             </div>
 
             <div class="single-contact">
-                <input type="text" placeholder="Enter Your Name....">
-                <input type="email" placeholder="Enter Your Email....">
+                <input type="text" placeholder="Masukkan Nama Kalian...">
+                <input type="email" placeholder="Masukkan Email Kalian...">
                 <input type="submit" value="submit">
             </div>
         </div>
@@ -185,7 +209,7 @@
     <script src="js/bootstrap-notify.js"></script>
 
     <!--  Google Maps Plugin    -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
@@ -225,6 +249,10 @@
         });
 
     </script>
+    <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https:// cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 
 </html>
