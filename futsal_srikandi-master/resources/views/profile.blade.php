@@ -44,17 +44,39 @@
 
 <body>
 
-    <header>
-        <h2><a href=" #">Futsal Srikandi</a></h2>
-        <nav>
-            <li><a href="/">Home</a></li>
+<header class="sticky-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+             <a class="navbar-brand" href="#">BADMIND</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+             <li class="nav-item active">
+                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+             </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="#services">Layanan</a>
+            </li>
+            <li class="nav-item">
+                 <a class="nav-link" href="#maps">Lokasi</a>
+             </li>
+             <li class="nav-item">
+              <a class="nav-link" href="#newsletter">Jadwal</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Kontak</a>
+            </li>
+      </ul>
+     </div>
+    </nav>
+            <!-- <li><a href="/">Home</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#maps">Lokasi</a></li>
             <li><a href="#newsletter">Jadwal</a></li>
             <li><a href="#contact">Kontak</a></li>
-            <li><a href="/login">Login</a></li>
-        </nav>
-    </header>
+            <li><a href="/login">Login</a></li> -->
+</header>
 
 
     <section class="banner-area">
