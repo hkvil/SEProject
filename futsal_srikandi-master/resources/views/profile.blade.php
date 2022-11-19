@@ -52,6 +52,7 @@
             <li><a href="#maps">Lokasi</a></li>
             <li><a href="#newsletter">Jadwal</a></li>
             <li><a href="#contact">Kontak</a></li>
+            <li><a href="/login">Login</a></li>
         </nav>
     </header>
 

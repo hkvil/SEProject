@@ -22,6 +22,7 @@
                     <li><a href="#">Beranda</a></li>
                     <li><a href="schedule">Jadwal</a></li>
                     <li><a href="profile">Profil</a></li>
+                    <li><a href="login">Login</a></li>
                 </ul>
             </div>
         </div>
