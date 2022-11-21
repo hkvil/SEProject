@@ -9,7 +9,7 @@
     <script type="text/javascript" src="js/vue/vue.js"></script>
     <!-- Latest compiled and minified CSS -->
 
-        <!-- Including the bootstrap CDN -->
+    <!-- Including the bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -27,64 +27,64 @@
     <link rel="stylesheet" href="css/tambahsewa-style.css">
     <link rel="stylesheet" type="text/css" href="css/profile-style.css">
     <style type="text/css">
-        .maps .container-map {
-            height: 400px;
-            margin: 0%;
-            padding: 0%;
-            width: 100%;
-        }
+    .maps .container-map {
+        height: 400px;
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+    }
 
-        #map {
-            margin: 0%;
-            padding: 0%;
-            width: 100%;
-            height: 100%;
-            border: 1px solid blue;
-        }
+    #map {
+        margin: 0%;
+        padding: 0%;
+        width: 100%;
+        height: 100%;
+        border: 1px solid blue;
+    }
 
-        #data,
-        #allData {
-            display: none;
-        }
-
+    #data,
+    #allData {
+        display: none;
+    }
     </style>
 </head>
 
 <body>
 
-<header class="sticky-top">
+    <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-             <a class="navbar-brand" href="#">BADMIND</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ml-auto">
-             <li class="nav-item active">
-                 <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-             </li>
-             <li class="nav-item">
-                 <a class="nav-link" href="#services">Layanan</a>
-            </li>
-            <li class="nav-item">
-                 <a class="nav-link" href="#maps">Lokasi</a>
-             </li>
-             <li class="nav-item">
-              <a class="nav-link" href="#newsletter">Jadwal</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#contact">Kontak</a>
-            </li>
-      </ul>
-     </div>
-    </nav>
-            <!-- <li><a href="/">Home</a></li>
+            <a class="navbar-brand" href="#">BADMIND</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Layanan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#maps">Lokasi</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#newsletter">Jadwal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- <li><a href="/">Home</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#maps">Lokasi</a></li>
             <li><a href="#newsletter">Jadwal</a></li>
             <li><a href="#contact">Kontak</a></li>
             <li><a href="/login">Login</a></li> -->
-</header>
+    </header>
 
 
     <section class="banner-area">
@@ -181,32 +181,32 @@
     </section>
 
     <section class="newsletter" id="newsletter">
-                <h3 class="header-text" style="color: white;">SCHEDULE</h3>
-                    <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
+        <h3 class="header-text" style="color: white;">SCHEDULE</h3>
+        <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
                                                         echo date("Y-m-d"); ?>" onchange="getJSON()" />
-                <div class="content table-responsive table-full-width" style="margin-top: 50px;">
-                    <div class="jadwal">
-                        <div class="baris" v-for="lapangan in jadwal">
-                            <div class="lapangan" style="color: white; width: 170px;">
-                                <h4>Lapangan @{{ lapangan.lapangan }}</h4>
-                            </div>
-                            <a v-for="jam in lapangan.urutan" class="cards credentialing tombol-pilihjadwal" style="pointer-events: none; cursor: not-allowed;"
-                                onclick="getDataLapangan(this.id)">
-                                <div class="overlay"></div>
-                                <div class="jam">@{{ jam.nomor }}</div>
-                            </a>
-                        </div>
+        <div class="content table-responsive table-full-width" style="margin-top: 50px;">
+            <div class="jadwal">
+                <div class="baris" v-for="lapangan in jadwal">
+                    <div class="lapangan" style="color: white; width: 170px;">
+                        <h4>Lapangan @{{ lapangan.lapangan }}</h4>
                     </div>
+                    <a v-for="jam in lapangan.urutan" class="cards credentialing tombol-pilihjadwal"
+                        style="pointer-events: none; cursor: not-allowed;" onclick="getDataLapangan(this.id)">
+                        <div class="overlay"></div>
+                        <div class="jam">@{{ jam.nomor }}</div>
+                    </a>
                 </div>
+            </div>
+        </div>
 
-				<div class="keterangan">
-					<div class="sudah_booking"></div>
-					<h4 class="dif" style="color: white;">Sudah Booking</h4>			
-				</div>
-				<div class="keterangan">
-					<div class="belum_booking"></div>
-					<h4 style="color: white;">Belum Booking</h4>			
-				</div>
+        <div class="keterangan">
+            <div class="sudah_booking"></div>
+            <h4 class="dif" style="color: white;">Sudah Booking</h4>
+        </div>
+        <div class="keterangan">
+            <div class="belum_booking"></div>
+            <h4 style="color: white;">Belum Booking</h4>
+        </div>
     </section>
 
     <section class="contact" id="contact">
@@ -235,10 +235,9 @@
     </footer>
 
     <script type="text/javascript">
-        window.onload = function () {
-            buatId();
-        }
-
+    window.onload = function() {
+        buatId();
+    }
     </script>
     <script src="/js/profile.js"></script>
     <script src="https://kit.fontawesome.com/3f4aa1c6f5.js" crossorigin="anonymous"></script>
@@ -270,15 +269,14 @@
         type="text/css" />
 
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#date-picker').datepicker({
+    $(document).ready(function() {
+        $('#date-picker').datepicker({
 
-                uiLibrary: 'bootstrap',
-                format: 'yyyy-mm-dd'
+            uiLibrary: 'bootstrap',
+            format: 'yyyy-mm-dd'
 
-            });
         });
-
+    });
     </script>
 
 
@@ -287,13 +285,12 @@
     <script src="js/tambahsewa-back-script.js"></script>
 
     <script>
-        jQuery(document).ready(function () {
-            $('.counter').counterUp({
-                delay: 50,
-                time: 1000
-            });
+    jQuery(document).ready(function() {
+        $('.counter').counterUp({
+            delay: 50,
+            time: 1000
         });
-
+    });
     </script>
 </body>
 

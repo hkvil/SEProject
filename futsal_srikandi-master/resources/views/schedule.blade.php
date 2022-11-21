@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,6 +20,7 @@
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 
 </head>
+
 <body onload="buatId()">
 
     <div class="container">
@@ -42,22 +44,26 @@
     </div>
 
     <!-- datepicker from gijgo -->
-    <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript">
+    </script>
+    <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet"
+        type="text/css" />
 
 
     <script src="js/schedule-script.js"></script>
     <script src="js/schedule-back-script.js"></script>
 
     <script type="text/javascript">
-    $(document).ready(function () {
+    $(document).ready(function() {
         $('#date-picker').datepicker({
 
-            uiLibrary: 'bootstrap', format: 'yyyy-mm-dd'
+            uiLibrary: 'bootstrap',
+            format: 'yyyy-mm-dd'
 
         });
 
     });
     </script>
 </body>
+
 </html>
