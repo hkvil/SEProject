@@ -8,16 +8,6 @@
     <!-- Vue JS -->
     <script type="text/javascript" src="js/vue/vue.js"></script>
     <!-- Latest compiled and minified CSS -->
-<<<<<<< HEAD
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <!-- Popper JS -->
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script> -->
-    <!-- Latest compiled JavaScript -->
-    
-=======
 
     <!-- Including the bootstrap CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
@@ -34,7 +24,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      Latest compiled JavaScript
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
->>>>>>> dayat
     <link rel="stylesheet" href="css/tambahsewa-style.css">
     <link rel="stylesheet" type="text/css" href="css/profile-style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
@@ -62,41 +51,6 @@
 </head>
 
 <body>
-<<<<<<< HEAD
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand h1" href="#">Hidden brand</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-        </nav>
-    <header>
-        <!-- <h2><a href=" #" style="font-family: 'Poppins', sans-serif;">Gor Badminton PITOE</a></h2>
-        <nav style="font-family: 'Poppins', sans-serif;">
-            <li><a href="/">Home</a></li>
-            <li><a href="#services">Layanan</a></li>
-            <li><a href="#maps">Lokasi</a></li>
-            <li><a href="#newsletter">Cek Jadwal</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </nav> -->
-        
-=======
 
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -131,7 +85,6 @@
             <li><a href="#newsletter">Jadwal</a></li>
             <li><a href="#contact">Kontak</a></li>
             <li><a href="/login">Login</a></li> -->
->>>>>>> dayat
     </header>
     
 
@@ -189,15 +142,9 @@
         </div>
     </section>
 
-<<<<<<< HEAD
-    <section class="newsletter" id="newsletter" style="font-family: 'Poppins', sans-serif;">
-                <h3 class="header-text" style="color: white;">SCHEDULE</h3>
-                    <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-=======
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
->>>>>>> dayat
                                                         echo date("Y-m-d"); ?>" onchange="getJSON()" />
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
@@ -214,16 +161,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
-				<div class="keterangan">
-					<div class="sudah_booking"></div>
-					<h4 class="dif" style="color: white;">Sudah Dibooking</h4>			
-				</div>
-				<div class="keterangan">
-					<div class="belum_booking"></div>
-					<h4 style="color: white;">Masih Kosong</h4>			
-				</div>
-=======
         <div class="keterangan">
             <div class="sudah_booking"></div>
             <h4 class="dif" style="color: white;">Sudah Booking</h4>
@@ -232,7 +169,6 @@
             <div class="belum_booking"></div>
             <h4 style="color: white;">Belum Booking</h4>
         </div>
->>>>>>> dayat
     </section>
 
     <section class="contact" id="contact" style="font-family: 'Poppins', sans-serif;">
