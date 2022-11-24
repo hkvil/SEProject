@@ -1,5 +1,6 @@
 <?php
 
+
 use Illuminate\Database\Seeder;
 
 class OperatorSeeder extends Seeder
@@ -15,27 +16,9 @@ class OperatorSeeder extends Seeder
         DB::table('operator')->insert([
             [
                 'kode_operator' => '1',
-                'nama' => 'Syaddad',
+                'nama' => 'admin',
                 'password' => bcrypt('admin'),
             ],
-
-            [
-                'kode_operator' => '2',
-                'nama' => 'Jahval',
-                'password' => bcrypt('admin'),
-            ],
-
-            [
-                'kode_operator' => '3',
-                'nama' => 'Dayat',
-                'password' => bcrypt('admin'),
-            ],
-            [
-                'kode_operator' => '4',
-                'nama' => 'Arif',
-                'password' => bcrypt('admin'),
-            ],
-
         ]);
     }
 }

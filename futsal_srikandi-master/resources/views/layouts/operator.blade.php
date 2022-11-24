@@ -13,16 +13,16 @@
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-right">
                         <li class="dropdown">
-                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                                    <p class="capitalize">
-                                        {{ $operator_nama }} &emsp;
-										<b class="caret"></b>
-									</p>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                <p class="capitalize">
+                                    {{ $operator_nama }} &emsp;
+                                    <b class="caret"></b>
+                                </p>
 
-                              </a>
-                              <ul class="dropdown-menu">
+                            </a>
+                            <ul class="dropdown-menu">
                                 <li><a href="/logout">Log Out</a></li>
-                              </ul>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -42,20 +42,22 @@
         <footer class="footer">
             <div class="container-fluid">
                 <p class="copyright pull-right">
-                    &copy; <script>document.write(new Date().getFullYear())</script> <a href="#">Tim Basing Aja</a>, Teknik Informatika - ITERA
+                    &copy; <script>
+                    document.write(new Date().getFullYear())
+                    </script> <a href="#">Tim Basing Aja</a>, Teknik Informatika - ITERA
                 </p>
             </div>
         </footer>
 
     </div>
-</div>
+    </div>
 
     <!--   Core JS Files   -->
     <script src="js/jquery.3.2.1.min.js" type="text/javascript"></script>
-	<script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
 
-	<!--  Charts Plugin -->
-	<script src="js/chartist.min.js"></script>
+    <!--  Charts Plugin -->
+    <script src="js/chartist.min.js"></script>
 
     <!--  Notifications Plugin    -->
     <script src="js/bootstrap-notify.js"></script>
@@ -64,18 +66,21 @@
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-	<script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+    <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-	<!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-	<!-- <script src="assets/js/demo.js"></script> -->
+    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+    <!-- <script src="assets/js/demo.js"></script> -->
 
     <!-- datepicker from gijgo -->
-    <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript"></script>
-    <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript">
+    </script>
+    <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet"
+        type="text/css" />
 
 
     <script src="js/schedule-script.js"></script>
     <script src="js/schedule-back-script.js"></script>
     <script src="js/tambahsewa-back-script.js"></script>
-</body>
-</html>
+    </body>
+
+    </html>
