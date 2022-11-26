@@ -59,7 +59,17 @@ section h3.header-text {
     font-family: Helvetica;
     margin-bottom: 5px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px; 
+}
+@media (max-width :800px) {
+    section h3.header-text {
+        font-size: 30px;
+    }
+}
+@media (max-width :800px) {
+    section .content-area .single-service h2 {
+        font-size: 20px;
+    }
 }
 
 section p {
@@ -89,15 +99,19 @@ header {
     z-index: 10;
 }
 
+.status {
+    justify-content: center;
+    text-align: right;
+}
+
 .keterangan {
-    width: 250px;
     height: 100px;
     display: flex;
     justify-content: space-between;
 }
 
 .sudah_booking {
-    margin-top: 30px;
+    margin-top: 20px;
     height: 50px;
     width: 80px;
     background: #0a5234;
@@ -109,14 +123,19 @@ header {
 }
 
 .keterangan h4.dif {
-    margin-top: 45px;
+    margin-top: 35px;
+    /* margin-bottom: ; */
+    padding-left: 10px;
+    
 }
 
 .belum_booking {
+    margin-top: 20px;
     height: 50px;
     width: 80px;
     background: #c9eadd;
     border-radius: 10px;
+    
 }
 
 @keyframes animate {

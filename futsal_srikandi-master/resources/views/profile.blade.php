@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    <title>Profil | Futsal Srikandi</title>
+    <title>Sumasshu Badminton</title>
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/googlemap.js"></script>
     <!-- Vue JS -->
@@ -10,23 +10,31 @@
     <!-- Latest compiled and minified CSS -->
 
     <!-- Including the bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-
-    <!-- 3
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+    <!-- 
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
      jQuery library
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      Popper JS 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
      Latest compiled JavaScript
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
+    -->
     <link rel="stylesheet" href="css/tambahsewa-style.css">
     <link rel="stylesheet" type="text/css" href="css/profile-style.css">
     <style type="text/css">
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
     .maps .container-map {
         height: 400px;
         margin: 0%;
@@ -50,15 +58,14 @@
 </head>
 
 <body>
-
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">BADMIND</a>
+            <a class="navbar-brand" href="#" style="margin-left: 100px;">SUMASSHU</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 100px;">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
@@ -78,23 +85,15 @@
                 </ul>
             </div>
         </nav>
-        <!-- <li><a href="/">Home</a></li>
-            <li><a href="#services">Layanan</a></li>
-            <li><a href="#maps">Lokasi</a></li>
-            <li><a href="#newsletter">Jadwal</a></li>
-            <li><a href="#contact">Kontak</a></li>
-            <li><a href="/login">Login</a></li> -->
     </header>
 
 
-    <section class="banner-area">
+    <section class="banner-area font-italic">
         <div class="img-area"></div>
         <div class="banner-text">
-            <h1>Futsal Srikandi</h1>
-            <!-- <h3>Make it Easy...</h3> -->
-            <!-- <a href="/home" class="btn">Get Started</a> -->
+            <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
         </div>
-        <div class="stat" id="stat">
+        <!-- <div class="stat" id="stat">
             <div class="content-box">
                 <br><br>
                 <div class="container">
@@ -133,7 +132,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
     </section>
 
     <section class="services-area" id="services">
@@ -145,22 +144,22 @@
                     <i class="fas fa-map"></i>
                 </div>
                 <h2>Lapangan</h2>
-                <p>Menyediakan layanan booking lapangan futsal untuk kegiatan berolahraga anda</p>
+                <p>Menyediakan layanan booking lapangan badminton untuk kegiatan berolahraga anda</p>
             </div>
             <div class="single-service">
                 <div class="icon-area">
                     <i class="fas fa-calendar-alt"></i>
                 </div>
                 <h2>Event Turnamen</h2>
-                <p>Memberikan layanan dan harga terbaik untuk anda yang akan mengadakan acara serta turnamen olahraga
+                <p>Memberikan layanan dan harga terbaik untuk anda yang akan mengadakan acara serta turnamen badminton
                 </p>
             </div>
             <div class="single-service">
                 <div class="icon-area">
                     <i class="fas fa-dumbbell"></i>
                 </div>
-                <h2>Perlengkapan Olahraga</h2>
-                <p>Menyediakan perlengakapan olahraga dengan kualitas terbaik demi kenyamanan anda</p>
+                <h2>Perlengkapan Badminton</h2>
+                <p>Menyediakan perlengakapan badminton dengan kualitas terbaik demi kenyamanan anda</p>
             </div>
         </div>
     </section>
@@ -183,7 +182,7 @@
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />
+                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />                               
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
                 <div class="baris" v-for="lapangan in jadwal">
@@ -198,40 +197,80 @@
                 </div>
             </div>
         </div>
-
-        <div class="keterangan">
-            <div class="sudah_booking"></div>
-            <h4 class="dif" style="color: white;">Sudah Booking</h4>
-        </div>
-        <div class="keterangan">
-            <div class="belum_booking"></div>
-            <h4 style="color: white;">Belum Booking</h4>
-        </div>
-    </section>
-
-    <section class="contact" id="contact">
-        <h3 class="header-text">Hubungi Kami</h3>
-        <p>Untuk info booking dan pemesanan silahkan hubungi kami</p>
-        <div class="content-area">
-            <div class="single-contact">
-                <i class="fa fa-map-marker"></i>
-                <p>Jl. Pelita I, Labuhan Ratu <br> Bandar Lampung, Lampung</p>
-                <i class="fa fa-envelope"></i>
-                <p>futsal@srikandi.com</p>
-                <i class="fa fa-phone"></i>
-                <p>+628 1411 15543</p>
+        <div class="status">
+            <div class="keterangan">
+                <div class="sudah_booking"></div>
+                <h4 class="dif" style="color: white;">Penuh</h4>
             </div>
-
-            <div class="single-contact">
-                <input type="text" placeholder="Enter Your Name....">
-                <input type="email" placeholder="Enter Your Email....">
-                <input type="submit" value="submit">
+            <div class="keterangan">
+                <div class="belum_booking"></div>
+                <h4 class="dif" style="color: white;">Kosong</h4>
             </div>
         </div>
     </section>
+
+    <!-- AKAN BERUBAH -->
+    <section>
+        <div class="container">
+            <h3>Form Send Whatsapp</h3>
+
+            <div class="row">
+                <div class="col-6">
+                <form action="send.php" enctype="multipart/form-data" method="POST" target="_blank">
+                    <div class="form-group">
+                        <label for="nama">Nama</label>
+                        <input name="nama" type="text" class="form-control"  placeholder="NamaKamu" required>
+                    </div>               
+                    <div class="form-group">
+                        <label for="telp">No Whatsapp</label>
+                        <input name="telp" type="tel" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="tgl">Tanggal Pesan</label>
+                        <input name="tgl"type="date" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lap">Pilih Lapangan</label>
+                        <select name="lap" class="form-control" required>
+                        <option>Lapangan Atas</option>
+                        <option>Lapangan Tengah</option>
+                        <option>Lapangan Bawah</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="jm">Pilih Jam</label>
+                        <select name="jm" class="form-control" required>
+                       <?php
+                        $j = array(7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
+                        foreach ($j as $value) {
+                            if($j<10){
+                                echo "<option>0$value:00</option>"; 
+                            }else{
+                                echo "<option>$value:00</option>"; 
+                            }
+                              
+                        }
+                       ?>
+            
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="cat">Catatan</label>
+                        <textarea name="cat" class="form-control" rows="3"></textarea>
+                    </div>
+                    <input type="hidden" name="nowa" value="6285217995654">
+                    <button type="submit" name="submit" class="btn btn-primary" value="Submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+                     
+    <!-- END BERUBAH -->
 
     <footer>
-        <p>All Right reserved by &copy; <a href="#">Team Basing Aja 2020</a></p>
+        <p>All Right reserved by &copy; <a href="tes.php">Team Basing Aja 2020</a></p>
     </footer>
 
     <script type="text/javascript">
