@@ -1,6 +1,4 @@
 <?php
-
-    echo "<h1>SELAMAT</h1>";
                         if (isset($_POST['Submit'])) {
                             $nama   =$_POST['nama'];
                             $wa     =$_POST['nowa'];
@@ -8,7 +6,7 @@
                             $lap    =$_POST['lap'];
                             $jm     =$_POST['jm'];
                             $cat    =$_POST['cat'];
-                            header("location:https://api.whatsapp.com/send?phone=
+                            header("https://api.whatsapp.com/send?phone=
                             628521995654&text=Nama:%20$nama%20%0D
                             Nomor:%20$wa%20%0D
                             Tanggal:%20$tgl%20%0D

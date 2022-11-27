@@ -216,7 +216,8 @@
 
             <div class="row">
                 <div class="col-6">
-                <form action="send.php" enctype="multipart/form-data" method="POST" target="_blank">
+                <form action="{{action('LapanganController@index')}}" target="_blank" method="post">
+                    @csrf
                     <div class="form-group">
                         <label for="nama">Nama</label>
                         <input name="nama" type="text" class="form-control"  placeholder="NamaKamu" required>
@@ -266,7 +267,8 @@
         </div>
     </section>
     
-                     
+
+
     <!-- END BERUBAH -->
 
     <footer>
@@ -315,8 +317,8 @@
             format: 'yyyy-mm-dd'
 
         });
-    });
-    </script>
+        </script>
+
 
 
     <script src="js/schedule-script.js"></script>
