@@ -224,7 +224,7 @@
                     </div>               
                     <div class="form-group">
                         <label for="telp">No Whatsapp</label>
-                        <input name="telp" type="tel" class="form-control" required>
+                        <input name="telp" type="tel" class="form-control" required placeholder="Masukan Nomor WA">
                     </div>
                     <div class="form-group">
                         <label for="tgl">Tanggal Pesan</label>
@@ -232,7 +232,7 @@
                     </div>
                     <div class="form-group">
                         <label for="lap">Pilih Lapangan</label>
-                        <select name="lap" class="form-control" required>
+                        <select name="lap" class="form-control" required placeholder="Pilih Lapangan">
                         <option>Lapangan Atas</option>
                         <option>Lapangan Tengah</option>
                         <option>Lapangan Bawah</option>
@@ -240,7 +240,7 @@
                     </div>
                     <div class="form-group">
                         <label for="jm">Pilih Jam</label>
-                        <select name="jm" class="form-control" required>
+                        <select name="jm" class="form-control" required placeholder="Pilih Jam">
                        <?php
                         $j = array(7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
                         foreach ($j as $value) {
