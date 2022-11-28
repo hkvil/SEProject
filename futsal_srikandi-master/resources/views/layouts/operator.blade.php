@@ -44,7 +44,7 @@
                 <p class="copyright pull-right">
                     &copy; <script>
                     document.write(new Date().getFullYear())
-                    </script> <a href="#">Tim Basing Aja</a>, Teknik Informatika - ITERA
+                    // </script> <a href="#">Team Dayat</a>, Teknik Informatika - UIN JAKARTA
                 </p>
             </div>
         </footer>

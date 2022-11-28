@@ -21,37 +21,32 @@
     <div class="line-1 line"></div>
     <div class="line-2 line"></div>
 
-    <div class="container">
-        <div class="img">
-            <!-- <img src="img/football-player2.svg" alt=""> -->
-        </div>
-        <div class="login-content">
-            <form action="{{route('login')}}" method="POST">
-                {{csrf_field()}}
-                <!-- gambar logo -->
-                <h2 class="title">Srikandi&nbsp; Futsal</h2>
-                <div class="input-div user">
-                    <div class="i">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <div class="div">
-                        <h5>Username</h5>
-                        <input type="text" class="input" name="nama">
-                    </div>
+    <div class="login-content">
+        <form action="{{route('login')}}" method="POST">
+            {{csrf_field()}}
+            <!-- gambar logo -->
+            <h2 class="title" style="align-text: center;">SUMASSHU<br> BADMINTON</h2>
+            <div class="input-div user">
+                <div class="i">
+                    <i class="fas fa-user"></i>
                 </div>
-                <div class="input-div pass">
-                    <div class="i">
-                        <i class="fas fa-lock"></i>
-                    </div>
-                    <div class="div">
-                        <h5>Password</h5>
-                        <input type="password" class="input" name="password">
-                    </div>
+                <div class="div">
+                    <h5>Username</h5>
+                    <input type="text" class="input" name="nama">
                 </div>
-                <a href="#">Lupa Password?</a>
-                <input type="submit" class="btn" value="Masuk">
-            </form>
-        </div>
+            </div>
+            <div class="input-div pass">
+                <div class="i">
+                    <i class="fas fa-lock"></i>
+                </div>
+                <div class="div">
+                    <h5>Password</h5>
+                    <input type="password" class="input" name="password">
+                </div>
+            </div>
+            <a href="#">Lupa Password?</a>
+            <input type="submit" class="btn" value="Masuk">
+        </form>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>

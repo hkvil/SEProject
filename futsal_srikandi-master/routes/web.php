@@ -55,3 +55,4 @@ Route::delete('/daftarpenyewa/{transaksi}','TransaksiController@destroy');
 Route::put('/daftarpenyewa/{transaksi}','TransaksiController@update');
 
 Route::get('/', 'LapanganController@index');
+Route::post('/','LapanganController@index');
