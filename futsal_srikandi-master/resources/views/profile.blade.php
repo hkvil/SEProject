@@ -20,7 +20,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
     <!-- 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
      jQuery library
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -60,7 +60,7 @@
 <body>
     <header class="sticky-top">
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#" style="margin-left: 100px;">SUMASSHU</a>
+            <a class="navbar-brand font-weight-bold" href="#" style="margin-left: 100px;">SUMASSHU BADMINTON</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -103,7 +103,7 @@
                                 <i class="fas fa-users"></i>
                                 <h2><span class="counter text-counter">800</span><span>+</span>
                                 </h2>
-                                <p>Pengguna</p>
+                                <p>Pengguna</p> 
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -151,8 +151,7 @@
                     <i class="fas fa-calendar-alt"></i>
                 </div>
                 <h2>Event Turnamen</h2>
-                <p>Memberikan layanan dan harga terbaik untuk anda yang akan mengadakan acara serta turnamen badminton
-                </p>
+                <p>Memberikan layanan dan harga terbaik untuk anda yang akan mengadakan acara serta turnamen badminton</p>
             </div>
             <div class="single-service">
                 <div class="icon-area">
@@ -182,7 +181,7 @@
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />                               
+                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
                 <div class="baris" v-for="lapangan in jadwal">
@@ -215,15 +214,15 @@
             <h3>Form Send Whatsapp</h3>
 
             <div class="row">
-                <div class="col-6">
+                <div cla ss="col-6">
                 <form action="{{action('LapanganController@index')}}" target="_blank" method="post">
                     @csrf
                     <div class="form-group">
                         <label for="nama">Nama</label>
-                        <input name="nama" type="text" class="form-control"  placeholder="NamaKamu" required>
-                    </div>               
+                        <input name="nama" type="text" class="form-control"  placeholder="Nama Lengkap" required>
+                    </div>
                     <div class="form-group">
-                        <label for="telp">No Whatsapp</label>
+                        <label for="telp">No. Whatsapp</label>
                         <input name="telp" type="tel" class="form-control" required>
                     </div>
                     <div class="form-group">
@@ -245,9 +244,9 @@
                         $j = array(7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
                         foreach ($j as $value) {
                             if($j<10){
-                                echo "<option>0$value:00</option>"; 
+                                echo "<option>0$value:00</option>";
                             }else{
-                                echo "<option>$value:00</option>"; 
+                                echo "<option>$value:00</option>";
                             }
                               
                         }
@@ -272,7 +271,7 @@
     <!-- END BERUBAH -->
 
     <footer>
-        <p>All Right reserved by &copy; <a href="tes.php">Team Basing Aja 2020</a></p>
+        <p>All Right reserved by &copy; <a href="tes.php">Kelompok X<sub>n</sub> 2022</a></p>
     </footer>
 
     <script type="text/javascript">
