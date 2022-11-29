@@ -20,13 +20,23 @@
     justify-content: space-evenly;
 }
 
+.content {
+    width: 85%;
+}
+.jadwal {
+    margin: 0px;
+}
 .baris {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     font-family: "Open Sans";
     height: 6vh;
+}
+.content .jadwal .baris h4 {
+    margin: auto;
 }
 
 .credentialing {
@@ -100,8 +110,13 @@
 }
 
 @media screen and (max-height: 768px) {
+    .jadwal {
+    }
     .baris {
+        font-size: 15px;
         height: 8vh;
+        display: flex;
+        flex: column;
     }
 
     .cards {

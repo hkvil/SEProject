@@ -93,10 +93,15 @@ header {
     justify-content: space-between;
     align-items: center;
     /* padding: 35px 100px 0; */
-    animation: 1s animate 0.5 forwards;
+    animation: 1s animate 0.5 forwards; 
     opacity: 0;
     color: #fff;
     z-index: 10;
+}
+.booking-button {
+    border: 0px;    
+    border-radius: 10px;
+    background-color: #29ad76;
 }
 
 .status {
@@ -126,7 +131,6 @@ header {
     margin-top: 35px;
     /* margin-bottom: ; */
     padding-left: 10px;
-    
 }
 
 .belum_booking {
@@ -135,7 +139,6 @@ header {
     width: 80px;
     background: #c9eadd;
     border-radius: 10px;
-    
 }
 
 @keyframes animate {
@@ -144,43 +147,46 @@ header {
     }
 }
 
-header h2 {
-    font-family: Helvetica;
+.whangsaff {
+    background-color: #ddd;
 }
-
+section .container h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Helvetica;
+    font-size: 40px;
+}
 header nav {
     display: flex;
-    margin-right: -15px;
+    background-color: #0a523400;
+    color:rgb(255, 255, 255);
+    padding: 0px, 100px, 0px, 100px;
 }
 
 header nav li {
-    margin: 0 15px
+    margin-left: 15px;
 }
 
 @media (max-width :800px) {
-    /* header {
-        padding: 20px 50px;
+    header {
+        padding: 0px;
         flex-direction: column;
-    } */
-
+    }
     header h2 {
         margin-bottom: 15px;
     }
-
     header nav li {
         margin: 0 7px;
     }
 }
 
 .banner-area {
-    /* position: relative; */
+    position: relative; 
     justify-content: center;
     text-align: center;
     min-height: 100vh;
     color: #fff;
 }
-
-
 
 .banner-area .img-area {
     position: absolute;
@@ -221,10 +227,9 @@ header nav li {
         margin: 0;
     }
 }
-
 @media (max-width:800px) {
     .banner-area {
-        min-height: 600px;
+        min-height: 920px;
     }
 
     .banner-area h1 {
@@ -241,6 +246,9 @@ header nav li {
 
     .banner-text {
         padding-top: 15%;
+    }
+    .banner-text h2 {
+        font-size: 25px;
     }
 }
 
@@ -359,7 +367,6 @@ div.active {
 }
 
 @media (max-width:800px) {
-
     .field-name,
     .field-email,
     .field-password,
@@ -477,7 +484,13 @@ footer p {
 .newsletter {
     background: rgb(41, 173, 118);
 }
+#date-picker {
+    color:white
+}
 
 .single-newsletter {
     padding-top: 4%;
+}
+footer {
+    margin:0px;
 }

@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html>  
 <html>
-
 <head>
     <title>Sumasshu Badminton</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script type="text/javascript" src="js/googlemap.js"></script>
     <!-- Vue JS -->
     <script type="text/javascript" src="js/vue/vue.js"></script>
-    <!-- Latest compiled and minified CSS -->
-
-    <!-- Including the bootstrap CDN -->
+    <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -58,46 +58,45 @@
 </head>
 
 <body>
-    <header class="sticky-top">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <a class="navbar-brand" href="#" style="margin-left: 100px;">SUMASSHU</a>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <a class="navbar-brand" href="#">SUMASSHU</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNav" style="margin-right: 100px;">
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item">
                         <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Layanan</a>
                     </li>
-                    <li class="nav-item">
+                    <!-- <li class="nav-item">
                         <a class="nav-link" href="#maps">Lokasi</a>
-                    </li>
+                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#newsletter">Jadwal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contact">Kontak</a>
+                        <a class="nav-link" href="#booking">Booking</a>
                     </li>
                 </ul>
             </div>
         </nav>
     </header>
-
-
     <section class="banner-area font-italic">
         <div class="img-area"></div>
         <div class="banner-text">
             <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
         </div>
+        <button class="booking-button" href="#booking">Booking Sekarang</button>
     </section>
 
     <section class="services-area" id="services">
         <h3 class="header-text">Layanan Kami</h3>
-        <p>Kami Menyediakan Layanan & Venue Olahraga Terbaik Untuk Anda </p>
+        <p>Kami Menyediakan Layanan & Venue Badminton Terbaik Untuk Anda </p>
         <div class="content-area">
             <div class="single-service">
                 <div class="icon-area">
@@ -124,7 +123,7 @@
         </div>
     </section>
 
-    <section class="maps" id="maps">
+    <!-- <section class="maps" id="maps">
         <h3 class="header-text">Srikandi Venue</h3>
         <p>Lokasi Futsal Srikandi tersebar pada beberapa lokasi </p>
         <div class="container-map">
@@ -136,7 +135,7 @@
 			echo '<div id="allData">' . $lapangan . '</div>';
 			?>
             <div id="map"></div>
-        </div>
+        </div> -->
     </section>
 
     <section class="newsletter" id="newsletter">
@@ -169,70 +168,64 @@
         </div>
     </section>
 
-    <!-- AKAN BERUBAH -->
-    <section>
-        <div class="container">
-            <h3>Form Send Whatsapp</h3>
-
+    <section class="whangsaff">
+        <div class="container" id="booking">
+            <h3>Form Booking Whatsapp</h3>
             <div class="row">
                 <div class="col-6">
-                <form action="{{action('LapanganController@index')}}" target="_blank" method="post">
-                    @csrf
-                    <div class="form-group">
-                        <label for="nama">Nama</label>
-                        <input name="nama" type="text" class="form-control"  placeholder="NamaKamu" required>
-                    </div>               
-                    <div class="form-group">
-                        <label for="telp">No Whatsapp</label>
-                        <input name="telp" type="tel" class="form-control" required placeholder="Masukan Nomor WA">
-                    </div>
-                    <div class="form-group">
-                        <label for="tgl">Tanggal Pesan</label>
-                        <input name="tgl"type="date" class="form-control" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="lap">Pilih Lapangan</label>
-                        <select name="lap" class="form-control" required placeholder="Pilih Lapangan">
-                        <option>Lapangan Atas</option>
-                        <option>Lapangan Tengah</option>
-                        <option>Lapangan Bawah</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="jm">Pilih Jam</label>
-                        <select name="jm" class="form-control" required placeholder="Pilih Jam">
-                       <?php
-                        $j = array(7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
-                        foreach ($j as $value) {
-                            if($j<10){
-                                echo "<option>0$value:00</option>"; 
-                            }else{
-                                echo "<option>$value:00</option>"; 
+                    <form action="{{action('LapanganController@index')}}" target="_blank" method="post">
+                        @csrf
+                        <div class="form-group">
+                            <label for="nama">Nama</label>
+                            <input name="nama" type="text" class="form-control"  placeholder="Nama Panjang" required>
+                        </div>               
+                        <div class="form-group">
+                            <label for="telp">No Whatsapp</label>
+                            <input name="telp" type="tel" class="form-control" required placeholder="Masukan Nomor WA">
+                        </div>
+                        <div class="form-group">
+                            <label for="tgl">Tanggal Pesan</label>
+                            <input name="tgl"type="date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lap">Pilih Lapangan</label>
+                            <select name="lap" class="form-control" required placeholder="Pilih Lapangan">
+                            <option>Lapangan Atas</option>
+                            <option>Lapangan Tengah</option>
+                            <option>Lapangan Bawah</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="jm">Pilih Jam</label>
+                            <select name="jm" class="form-control" required placeholder="Pilih Jam">
+                        <?php
+                            $j = array(7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
+                            foreach ($j as $value) {
+                                if($j<10){
+                                    echo "<option>0$value:00</option>"; 
+                                }else{
+                                    echo "<option>$value:00</option>"; 
+                                }
+                                
                             }
-                              
-                        }
-                       ?>
-            
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="cat">Catatan</label>
-                        <textarea name="cat" class="form-control" rows="3"></textarea>
-                    </div>
-                    <input type="hidden" name="nowa" value="6285217995654">
-                    <button type="submit" name="submit" class="btn btn-primary" value="Submit">Submit</button>
+                        ?>
+                
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="cat">Catatan</label>
+                            <textarea name="cat" class="form-control" rows="3"></textarea>
+                        </div>
+                        <input type="hidden" name="nowa" value="6285217995654">
+                        <button type="submit" name="submit" class="btn btn-primary" value="Submit">Submit</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
-    
-
-
-    <!-- END BERUBAH -->
 
     <footer>
-        <p>All Right reserved by &copy; <a href="tes.php">Team Basing Aja 2020</a></p>
+        <p>&copy; All Right reserved by Kelompok X<sub class="text-lowercase">n+1</sub> 2022</a></p>
     </footer>
 
     <script type="text/javascript">
@@ -242,8 +235,9 @@
     </script>
     <script src="/js/profile.js"></script>
     <script src="https://kit.fontawesome.com/3f4aa1c6f5.js" crossorigin="anonymous"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdg3NKQlbc9sVcuo8aRzLZQLtPoLrPZsw&callback=loadMap"
-        async defer></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdg3NKQlbc9sVcuo8aRzLZQLtPoLrPZsw&callback=loadMap"
+        async defer> -->
+    </script>
     <!--   Core JS Files   -->
     <script src="js/jquery.3.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
@@ -260,9 +254,6 @@
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
-    <!-- <script src="assets/js/demo.js"></script> -->
-
     <!-- datepicker from gijgo -->
     <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript">
     </script>
@@ -277,9 +268,7 @@
             format: 'yyyy-mm-dd'
 
         });
-        </script>
-
-
+    </script>
 
     <script src="js/schedule-script.js"></script>
     <script src="js/schedule-back-script.js"></script>
