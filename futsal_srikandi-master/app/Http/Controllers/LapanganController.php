@@ -28,23 +28,4 @@ class LapanganController extends Controller
 
 
     }
-
-    public function add(){
-        if (isset($_POST['Submit'])) {
-            $nama   =$_POST['nama'];
-            $wa     =$_POST['nowa'];
-            $tgl    =$_POST['tgl'];
-            $lap    =$_POST['lap'];
-            $jm     =$_POST['jm'];
-            $cat    =$_POST['cat'];
-            header;
-        } else {
-            echo"
-                <script>
-                    window.location=history.go(-1);
-                </script>
-            ";
-        }                 
-
-    }
 }

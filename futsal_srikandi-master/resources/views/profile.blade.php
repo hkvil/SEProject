@@ -103,7 +103,7 @@
                                 <i class="fas fa-users"></i>
                                 <h2><span class="counter text-counter">800</span><span>+</span>
                                 </h2>
-                                <p>Pengguna</p> 
+                                <p>Pengguna</p>
                             </div>
                         </div>
                         <div class="col-md-3">
@@ -181,7 +181,7 @@
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />
+                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />                               
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
                 <div class="baris" v-for="lapangan in jadwal">
@@ -222,7 +222,7 @@
                         <input name="nama" type="text" class="form-control"  placeholder="Nama Lengkap" required>
                     </div>
                     <div class="form-group">
-                        <label for="telp">No. Whatsapp</label>
+                        <label for="telp">No Whatsapp</label>
                         <input name="telp" type="tel" class="form-control" required>
                     </div>
                     <div class="form-group">
@@ -231,7 +231,7 @@
                     </div>
                     <div class="form-group">
                         <label for="lap">Pilih Lapangan</label>
-                        <select name="lap" class="form-control" required>
+                        <select name="lap" class="form-control" required placeholder="Pilih Lapangan">
                         <option>Lapangan Atas</option>
                         <option>Lapangan Tengah</option>
                         <option>Lapangan Bawah</option>
@@ -239,7 +239,7 @@
                     </div>
                     <div class="form-group">
                         <label for="jm">Pilih Jam</label>
-                        <select name="jm" class="form-control" required>
+                        <select name="jm" class="form-control" required placeholder="Pilih Jam">
                        <?php
                         $j = array(7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22);
                         foreach ($j as $value) {
