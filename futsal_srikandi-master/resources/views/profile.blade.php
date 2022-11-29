@@ -93,46 +93,6 @@
         <div class="banner-text">
             <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
         </div>
-        <!-- <div class="stat" id="stat">
-            <div class="content-box">
-                <br><br>
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-users"></i>
-                                <h2><span class="counter text-counter">800</span><span>+</span>
-                                </h2>
-                                <p>Pengguna</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-futbol"></i>
-                                <h2><span class="counter text-counter">3</span>
-                                </h2>
-                                <p>Lapangan</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-tshirt"></i>
-                                <h2><span class="counter text-counter">40</span>
-                                </h2>
-                                <p>Items</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-clock"></i>
-                                <h2><span class="counter text-counter">48</span><span>+</span>
-                                </h2>
-                                <p>Jadwal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div> -->
     </section>
 
     <section class="services-area" id="services">
@@ -182,7 +142,7 @@
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />                               
+                                                        echo date('D-M-Y'); ?>" onchange="getJSON()" />                               
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
                 <div class="baris" v-for="lapangan in jadwal">
