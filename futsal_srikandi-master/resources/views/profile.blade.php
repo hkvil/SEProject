@@ -91,7 +91,7 @@
         <div class="banner-text">
             <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
         </div>
-        <button class="booking-button"><a href="#booking" type="button">Booking Sekarang</a></button>
+        <button class="booking-button"><a href="#booking" type="button"><strong>Booking Sekarang</strong></a></button>
     </section>
 
     <section class="services-area" id="services">
@@ -117,7 +117,7 @@
                 <div class="icon-area">
                     <i class="fas fa-dumbbell"></i>
                 </div>
-                <h2>Perlengkapan Badminton</h2>
+                <h2>Equipment</h2>
                 <p>Menyediakan perlengakapan badminton dengan kualitas terbaik demi kenyamanan anda</p>
             </div>
         </div>
@@ -175,19 +175,19 @@
                 <div class="col-6">
                     <form action="{{action('LapanganController@index')}}" target="_blank" method="post">
                         @csrf
-                        <div class="form-group">
+                        <div class="form-group" id="whatsapp">
                             <label for="nama">Nama</label>
-                            <input name="nama" type="text" class="form-control"  placeholder="Nama Panjang" required>
+                            <input name="nama" type="text" class="form-control"  placeholder="Nama Lengkap" required>
                         </div>               
-                        <div class="form-group">
+                        <div class="form-group" id="whatsapp">
                             <label for="telp">No Whatsapp</label>
                             <input name="telp" type="tel" class="form-control" required placeholder="Masukan Nomor WA">
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="whatsapp">
                             <label for="tgl">Tanggal Pesan</label>
                             <input name="tgl"type="date" class="form-control" required>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="whatsapp">
                             <label for="lap">Pilih Lapangan</label>
                             <select name="lap" class="form-control" required placeholder="Pilih Lapangan">
                             <option>Lapangan Atas</option>
@@ -195,7 +195,7 @@
                             <option>Lapangan Bawah</option>
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="whatsapp">
                             <label for="jm">Pilih Jam</label>
                             <select name="jm" class="form-control" required placeholder="Pilih Jam">
                         <?php
@@ -212,12 +212,12 @@
                 
                             </select>
                         </div>
-                        <div class="form-group">
+                        <div class="form-group" id="whatsapp">
                             <label for="cat">Catatan</label>
                             <textarea name="cat" class="form-control" rows="3"></textarea>
                         </div>
                         <input type="hidden" name="nowa" value="6285217995654">
-                        <button type="submit" name="submit" class="btn btn-primary" value="Submit">Submit</button>
+                        <button type="submit" name="submit" class="btn btn-primary" value="Submit">Kirim</button>
                     </form>
                 </div>
             </div>

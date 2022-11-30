@@ -107,7 +107,7 @@ header {
     background-color: #29ad76;
     padding: 5px, 10px;
     color: white;
-    text-shadow: 1px 1px #000000;
+    text-shadow: 0.5px 0.5px #000000;
     box-shadow: 2px 2px 20px #00000053;
 }
 .booking-button a:hover {
@@ -119,15 +119,18 @@ header {
     justify-content: center;
     text-align: right;
 }
-
+.sudah_booking, .belum_booking, .keterangan h4 {
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+}
 .keterangan {
-    height: 100px;
     display: flex;
     justify-content: space-between;
 }
 
 .sudah_booking {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 50px;
     width: 80px;
     background: #0a5234;
@@ -135,17 +138,10 @@ header {
 }
 
 .keterangan h4 {
-    margin-top: 15px;
+    margin-left: 10px;
 }
-
-.keterangan h4.dif {
-    margin-top: 35px;
-    /* margin-bottom: ; */
-    padding-left: 10px;
-}
-
 .belum_booking {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     height: 50px;
     width: 80px;
     background: #c9eadd;
@@ -161,6 +157,12 @@ header {
 .whangsaff {
     background-color: #ddd;
 }
+@media (max-width :800px){
+    #whatsapp {
+        min-width: 344px;
+    }
+} 
+
 section .container h3 {
     text-align: center;
     text-transform: uppercase;
@@ -171,7 +173,15 @@ header nav {
     display: flex;
     background-color: #0a523400;
     color:rgb(255, 255, 255);
-    padding: 0px, 100px, 0px, 100px;
+    padding: 0px 100px;
+}
+.navbar {
+    padding: 10px 100px;
+}
+@media (max-width :800px) {
+    .navbar {
+        padding: 10px 35px;
+    }
 }
 
 header nav li {
@@ -496,7 +506,8 @@ footer p {
     background: rgb(41, 173, 118);
 }
 #date-picker {
-    color:white
+    color:white;
+    font-family: Poppins;
 }
 
 .single-newsletter {

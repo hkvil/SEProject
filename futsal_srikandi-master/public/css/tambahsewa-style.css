@@ -13,6 +13,10 @@
 .header {
     display: flex;
     justify-content: space-between;
+    
+}
+#tambahsewa {
+    padding: 0px;
 }
 
 .horizontal {
@@ -23,9 +27,7 @@
 .content {
     width: 85%;
 }
-.jadwal {
-    margin: 0px;
-}
+
 .baris {
     display: flex;
     flex-direction: column;
@@ -62,6 +64,7 @@
     border-radius: 10px;
     cursor: pointer;
     color: #40c78f;
+    min-width: none;
 }
 
 .cards:hover {
