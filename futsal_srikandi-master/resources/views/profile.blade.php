@@ -91,7 +91,7 @@
         <div class="banner-text">
             <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
         </div>
-        <button class="booking-button" href="#booking">Booking Sekarang</button>
+        <button class="booking-button"><a href="#booking" type="button">Booking Sekarang</a></button>
     </section>
 
     <section class="services-area" id="services">
