@@ -34,8 +34,8 @@
         <div class="square-2 square"></div>
         <div class="square-3 square"></div>
 
-        <div class="title-1">Futsal</div>
-        <div class="title-2">Srikandi</div>
+        <div class="title-1">Sumasshu</div>
+        <div class="title-2">Badminton</div>
 
         <div class="player">
             <img src="img/football.png" alt="">

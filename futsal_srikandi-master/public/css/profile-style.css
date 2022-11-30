@@ -59,7 +59,17 @@ section h3.header-text {
     font-family: Helvetica;
     margin-bottom: 5px;
     text-align: center;
-    font-size: 45px;
+    font-size: 40px; 
+}
+@media (max-width :800px) {
+    section h3.header-text {
+        font-size: 30px;
+    }
+}
+@media (max-width :800px) {
+    section .content-area .single-service h2 {
+        font-size: 20px;
+    }
 }
 
 section p {
@@ -83,21 +93,44 @@ header {
     justify-content: space-between;
     align-items: center;
     /* padding: 35px 100px 0; */
-    animation: 1s animate 0.5 forwards;
+    animation: 1s animate 0.5 forwards; 
     opacity: 0;
     color: #fff;
     z-index: 10;
 }
+.booking-button {
+    margin-top: 20px;
+    width: 120px;
+    height: 55px;
+    border: 0px;    
+    border-radius: 10px;
+    background-color: #29ad76;
+    padding: 5px, 10px;
+    color: white;
+    text-shadow: 0.5px 0.5px #000000;
+    box-shadow: 2px 2px 20px #00000053;
+}
+.booking-button a:hover {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
 
+.status {
+    justify-content: center;
+    text-align: right;
+}
+.sudah_booking, .belum_booking, .keterangan h4 {
+    margin: 24px 0px 0px 0px;
+    display: flex;
+    align-items: center;
+}
 .keterangan {
-    width: 250px;
-    height: 100px;
     display: flex;
     justify-content: space-between;
 }
 
 .sudah_booking {
-    margin-top: 30px;
+    /* margin-top: 20px; */
     height: 50px;
     width: 80px;
     background: #0a5234;
@@ -105,14 +138,10 @@ header {
 }
 
 .keterangan h4 {
-    margin-top: 15px;
+    margin-left: 10px;
 }
-
-.keterangan h4.dif {
-    margin-top: 45px;
-}
-
 .belum_booking {
+    /* margin-top: 20px; */
     height: 50px;
     width: 80px;
     background: #c9eadd;
@@ -125,43 +154,54 @@ header {
     }
 }
 
-header h2 {
-    font-family: Helvetica;
+.whangsaff {
+    background-color: #ddd;
 }
+@media (max-width :800px){
+    #whatsapp {
+        min-width: 300px;
+    }
+} 
 
 header nav {
     display: flex;
-    margin-right: -15px;
+    background-color: #0a523400;
+    color:rgb(255, 255, 255);
+    padding: 0px 100px;
+}
+.navbar {
+    padding: 10px 100px;
+}
+@media (max-width :800px) {
+    .navbar {
+        padding: 10px 35px;
+    }
 }
 
 header nav li {
-    margin: 0 15px
+    margin-left: 15px;
 }
 
 @media (max-width :800px) {
-    /* header {
-        padding: 20px 50px;
+    header {
+        padding: 0px;
         flex-direction: column;
-    } */
-
+    }
     header h2 {
         margin-bottom: 15px;
     }
-
     header nav li {
         margin: 0 7px;
     }
 }
 
 .banner-area {
-    /* position: relative; */
+    position: relative; 
     justify-content: center;
     text-align: center;
     min-height: 100vh;
     color: #fff;
 }
-
-
 
 .banner-area .img-area {
     position: absolute;
@@ -202,10 +242,9 @@ header nav li {
         margin: 0;
     }
 }
-
 @media (max-width:800px) {
     .banner-area {
-        min-height: 600px;
+        min-height: 920px;
     }
 
     .banner-area h1 {
@@ -222,6 +261,9 @@ header nav li {
 
     .banner-text {
         padding-top: 15%;
+    }
+    .banner-text h2 {
+        font-size: 25px;
     }
 }
 
@@ -340,7 +382,6 @@ div.active {
 }
 
 @media (max-width:800px) {
-
     .field-name,
     .field-email,
     .field-password,
@@ -458,7 +499,14 @@ footer p {
 .newsletter {
     background: rgb(41, 173, 118);
 }
+#date-picker {
+    color:white;
+    font-family: Poppins;
+}
 
 .single-newsletter {
     padding-top: 4%;
+}
+footer {
+    margin:0px;
 }

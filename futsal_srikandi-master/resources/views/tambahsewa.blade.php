@@ -3,7 +3,7 @@
 @extends('layouts.operator')
 
 @section('content')
-<div class="col-md-12">
+<div class="col-md-12" id="tambahsewa">
     <div class="card">
         <div class="header">
             <h4 class="title">Tambah Sewa</h4>

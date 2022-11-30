@@ -48,7 +48,7 @@
     	<div class="sidebar-wrapper">
             <div class="logo">
                 <a href="/" class="simple-text">
-                    Futsal Srikandi
+                    Sumasshu Badminton
                 </a>
             </div>
 
