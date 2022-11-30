@@ -142,7 +142,7 @@
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-                                                        echo date('D-M-Y'); ?>" onchange="getJSON()" />                               
+                                                        echo date("Y-m-d"); ?>" onchange="getJSON()" />                               
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
                 <div class="baris" v-for="lapangan in jadwal">
@@ -173,6 +173,12 @@
     <section>
         <div class="container">
             <h3>Form Send Whatsapp</h3>
+            <h3>
+                <?php
+                    $current = date('Y-m-d');
+                    echo $current;
+                ?>
+            </h3>
 
             <div class="row">
                 <div class="col-6">
@@ -188,7 +194,11 @@
                     </div>
                     <div class="form-group">
                         <label for="tgl">Tanggal Pesan</label>
-                        <input name="tgl"type="date" class="form-control" required>
+                        <?php
+                        $current  = date('Y-m-d');
+                        $nextWeek = date('Y-m-d',strtotime($current.' + 7 days'));
+                        echo "<input name='tgl' type='date' max='$nextWeek' class='form-control' required>";
+                        ?>
                     </div>
                     <div class="form-group">
                         <label for="lap">Pilih Lapangan</label>
@@ -258,7 +268,7 @@
     <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
 
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
-    <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
+    <!-- <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script> -->
 
     <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
     <!-- <script src="assets/js/demo.js"></script> -->

@@ -127,7 +127,9 @@ function gantiWarna(kode) {
 function getJSON() {
     hapusCSS();
 
-    var date = $('#date-picker').datepicker().value();
+    var date = $('#date-picker').datepicker({
+        format:'yyyy-mm-dd'
+    }).value();
     $.ajax({
         url: 'schedule/getdata',
         type: 'get',
