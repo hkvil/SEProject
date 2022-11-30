@@ -141,7 +141,7 @@
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
         <input id="date-picker" width="270" value="<?php date_default_timezone_set("Asia/Jakarta");
-                                                        echo date('Y-m-d'); ?>" onchange="getJSON()" />                               
+                                                        echo date('D-M-Y'); ?>" onchange="getJSON()" />                               
         <div class="content table-responsive table-full-width" style="margin-top: 50px;">
             <div class="jadwal">
                 <div class="baris" v-for="lapangan in jadwal">
