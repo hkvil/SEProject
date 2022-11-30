@@ -159,16 +159,10 @@ header {
 }
 @media (max-width :800px){
     #whatsapp {
-        min-width: 344px;
+        min-width: 300px;
     }
 } 
 
-section .container h3 {
-    text-align: center;
-    text-transform: uppercase;
-    font-family: Helvetica;
-    font-size: 40px;
-}
 header nav {
     display: flex;
     background-color: #0a523400;

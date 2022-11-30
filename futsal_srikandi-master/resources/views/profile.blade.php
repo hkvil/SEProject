@@ -170,7 +170,7 @@
 
     <section class="whangsaff">
         <div class="container" id="booking">
-            <h3>Form Booking Whatsapp</h3>
+            <h3 class="header-text">Form Pemesanan Lapangan</h3>
             <div class="row">
                 <div class="col-6">
                     <form action="{{action('LapanganController@index')}}" target="_blank" method="post">
