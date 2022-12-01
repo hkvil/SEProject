@@ -21,9 +21,10 @@ class LapanganController extends Controller
 
             return redirect()->away($target);
         }else{
-            $dump = Lapangan::where([['lat', '=', 'NULL']])->get();
-            $lapangan = Lapangan::distinct()->get(['lat','lng','nama']);
-            return view('profile',['lapangan'=>$lapangan,'dump'=>$dump]);
+            // $dump = Lapangan::where([['lat', '=', 'NULL']])->get();
+            // $lapangan = Lapangan::distinct()->get(['lat','lng','nama']);
+            // return view('profile',['lapangan'=>$lapangan,'dump'=>$dump]);
+            return view('profile');
         }
 
 

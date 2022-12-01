@@ -19,16 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
-    <!-- 
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-     jQuery library
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-     Popper JS 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-     Latest compiled JavaScript
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script> 
-    -->
+    <!-- Css -->
     <link rel="stylesheet" href="css/tambahsewa-style.css">
     <link rel="stylesheet" type="text/css" href="css/profile-style.css">
     <style type="text/css">
@@ -73,9 +64,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#services">Layanan</a>
                     </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#maps">Lokasi</a>
-                    </li> -->
                     <li class="nav-item">
                         <a class="nav-link" href="#newsletter">Jadwal</a>
                     </li>
@@ -91,7 +79,7 @@
         <div class="banner-text">
             <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
         </div>
-        <button class="booking-button"><a href="#booking" type="button"><strong>Booking Sekarang</strong></a></button>
+        <button class="booking-button"><a href="#booking" type="button"><strong>Book Now</strong></a></button>
     </section>
 
     <section class="services-area" id="services">
@@ -122,21 +110,6 @@
             </div>
         </div>
     </section>
-
-    <!-- <section class="maps" id="maps">
-        <h3 class="header-text">Srikandi Venue</h3>
-        <p>Lokasi Futsal Srikandi tersebar pada beberapa lokasi </p>
-        <div class="container-map">
-            <?php
-			$dump = json_encode($dump, true);
-			echo '<div id="data">' . $dump . '</div>';
-
-			$lapangan = json_encode($lapangan, true);
-			echo '<div id="allData">' . $lapangan . '</div>';
-			?>
-            <div id="map"></div>
-        </div> 
-    </section>-->
 
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
@@ -197,10 +170,10 @@
                         <div class="form-group" id="whatsapp">
                             <label for="lap">Pilih Lapangan</label>
                             <select name="lap" class="form-control" required>
-                            <option disabled selected hidden>Klik Untuk Pilih Lapangan</option>
-                            <option>Lapangan Atas</option>
-                            <option>Lapangan Tengah</option>
-                            <option>Lapangan Bawah</option>
+                                <option disabled selected hidden>Klik Untuk Pilih Lapangan</option>
+                                <option>Lapangan 1</option>
+                                <option>Lapangan 2</option>
+                                <option>Lapangan 3</option>
                             </select>
                         </div>
                         <div class="form-group" id="whatsapp">
@@ -229,8 +202,7 @@
                         <button type="submit" name="submit" class="btn btn-primary" value="Submit">Kirim</button>
                     </form>
                 </div>
-                <div class="col-lg-4 col-sm" id="column">
-                    
+                <div class="col-lg-5 col-sm" id="column">
                     <h4 class="header-text">Kontak Kami</h4>
                         <div class="content-area">
                             <div class="single-contact">
@@ -243,7 +215,7 @@
                             </div>
                         </div>     
                 </div>
-            </div> <!-- End Row -->            
+            </div>          
     </section>
             
     <footer>
@@ -257,26 +229,18 @@
     </script>
     <script src="/js/profile.js"></script>
     <script src="https://kit.fontawesome.com/3f4aa1c6f5.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdg3NKQlbc9sVcuo8aRzLZQLtPoLrPZsw&callback=loadMap"
-        async defer> -->
     </script>
     <!--   Core JS Files   -->
     <script src="js/jquery.3.2.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
-
     <!--  Charts Plugin -->
     <script src="js/chartist.min.js"></script>
-
     <!--  Notifications Plugin    -->
     <script src="js/bootstrap-notify.js"></script>
-
-    <!--  Google Maps Plugin    -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
-
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-    <!-- datepicker from gijgo -->
+    <!-- Datepicker -->
     <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript">
     </script>
     <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet"
@@ -305,5 +269,4 @@
     });
     </script>
 </body>
-
 </html>

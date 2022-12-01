@@ -102,12 +102,12 @@ header {
 }
 .booking-button {
     margin-top: 20px;
-    width: 120px;
-    height: 55px;
+    width: 115px;
+    height: 40px;
     border: 0px;    
-    border-radius: 10px;
+    border-radius: 30px;
     background-color: #29ad76;
-    padding: 5px, 10px;
+    padding: 0px, 10px;
     color: white;
     text-shadow: 0.5px 0.5px #000000;
     box-shadow: 2px 2px 20px #00000053;
@@ -151,7 +151,6 @@ header {
     border-radius: 10px;
 }
 .harga {
-    font-family: 'Courier New', Courier, monospace;
     margin-top: 24px;
     background-color: #c9eadd00;
     border: 2px solid #ffffff;

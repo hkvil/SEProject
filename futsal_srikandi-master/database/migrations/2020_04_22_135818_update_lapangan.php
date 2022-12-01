@@ -42,8 +42,6 @@ class UpdateLapangan extends Migration
             $table->string('kode_lapangan',5);
             $table->string('nama',50);
             $table->string('lokasi',20);
-            $table->decimal('lat', 10, 6);
-            $table->decimal('lng', 10, 6);
             $table->string('kode_jadwal',5);
             $table->primary('kode_lapangan');
         });
