@@ -127,19 +127,7 @@ function gantiWarna(kode) {
 function getJSON() {
     hapusCSS();
 
-    // var date = $('#date-picker').datepicker().value();
-    // $.ajax({
-    //     url: 'schedule/getdata',
-    //     type: 'get',
-    //     dataType: 'json',
-    //     success: function (response) {
-    //         for (i = 0; i < response['trans'].length; i++) {
-    //             if (date == response['trans'][i].tanggal) {
-    //                 gantiWarna(response['trans'][i]);
-    //             }
-    //         }
-    //     }
-    // });
+    
 
     var date = $('#date-picker').datepicker({
         format: 'yyyy-mm-dd'

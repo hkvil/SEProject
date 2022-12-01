@@ -12,7 +12,7 @@ new Vue({
     data: {
         jadwal: {
             '1': {
-                'lapangan': 'Atas',
+                'lapangan': '1',
                 'label': 'A',
                 'urutan': [ {'nomor':'07:00'},{'nomor':'08:00'},
                             {'nomor':'09:00'}, {'nomor':'10:00'},
@@ -24,7 +24,7 @@ new Vue({
                             {'nomor':'21:00'}, {'nomor':'22:00'} ]
             },
             '2': {
-                'lapangan': 'Tengah',
+                'lapangan': '2',
                 'label': 'B',
                 'urutan': [ {'nomor':'07:00'},{'nomor':'08:00'},
                             {'nomor':'09:00'}, {'nomor':'10:00'},
@@ -36,7 +36,7 @@ new Vue({
                             {'nomor':'21:00'}, {'nomor':'22:00'} ]
             },
             '3': {
-                'lapangan': 'Bawah',
+                'lapangan': '3',
                 'label': 'C',
                 'urutan': [ {'nomor':'07:00'},{'nomor':'08:00'},
                             {'nomor':'09:00'}, {'nomor':'10:00'},

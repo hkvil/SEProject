@@ -2,23 +2,19 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
     <!-- Font Awesome -->
     <script src="https://use.fontawesome.com/releases/v5.12.1/js/all.js"></script>
-    <title>Srikandi Futsal | Pesan & Cek Jadwal Lapangan Futsal</title>
+    <title>Sumasshu | Pesan & Cek Jadwal Lapangan Badminton</title>
     <link rel="stylesheet" type="text/css" href="css/home-style.css">
 </head>
 
 <body>
     <div class="container">
-        <div class="pattern"></div>
         <div class="nav">
             <div class="menu">
                 <ul>
@@ -37,13 +33,8 @@
         <div class="title-1">Sumasshu</div>
         <div class="title-2">Badminton</div>
 
-        <div class="player">
-            <img src="img/football.png" alt="">
-        </div>
-
         <div class="content">
-            <p>Lapangan futsal ini berlokasi di Srikandi Futsal & Batminton, Labuhan Ratu, Kedaton, Bandar Lampung City,
-                Lampung 35132, Indonesia</p>
+            <p>Lapangan badminton ini berlokasi di ..............., ..........., ......, ....., Indonesia</p>
             <button>Hubungi Sekarang</button>
         </div>
     </div>

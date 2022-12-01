@@ -53,7 +53,10 @@ section {
     flex-wrap: wrap;
     justify-content: center;
 }
+#column {
+    margin-top: 23px;
 
+}
 section h3.header-text {
     text-transform: uppercase;
     font-family: Helvetica;
@@ -76,7 +79,6 @@ section p {
     max-width: 700px;
     line-height: 2;
     padding: 0 20px;
-    margin-bottom: 30px;
     text-align: center;
 }
 
@@ -139,6 +141,7 @@ header {
 
 .keterangan h4 {
     margin-left: 10px;
+    font-size: 22px;
 }
 .belum_booking {
     /* margin-top: 20px; */
@@ -147,7 +150,17 @@ header {
     background: #c9eadd;
     border-radius: 10px;
 }
-
+.harga {
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 24px;
+    background-color: #c9eadd00;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+}
+.harga p {
+    padding: 12px 15px;
+    color: rgb(255, 255, 255); 
+}
 @keyframes animate {
     100% {
         opacity: 1;
@@ -416,6 +429,8 @@ div.active {
 
 .single-contact i {
     font-size: 33px;
+    display: flex;
+    justify-content: center;
 }
 
 .single-contact input {
@@ -463,10 +478,6 @@ footer p {
     background-color: white;
 }
 
-#maps {
-    background-color: rgb(221, 221, 221);
-}
-
 #stat .content-box .container {
     width: 100%;
     display: flex;
@@ -506,6 +517,16 @@ footer p {
 
 .single-newsletter {
     padding-top: 4%;
+}
+.contact .content-area .single-contact {
+    width: 500px;
+    padding: 20px;
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.single-contact i {
+    font-size: 33px;
 }
 footer {
     margin:0px;

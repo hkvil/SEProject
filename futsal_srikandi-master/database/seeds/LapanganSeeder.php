@@ -27,8 +27,8 @@ class LapanganSeeder extends Seeder
 
             DB::table('lapangan')->insert([
                'kode_lapangan' => 'LA-'.$j ,
-               'nama' => 'Lapangan Atas',
-               'lokasi' => 'Atas',
+               'nama' => 'Lapangan 1',
+               'lokasi' => '1',
                'kode_jadwal' => 'A'.$j,
                'lat' => '-5.376350',
                'lng' => '105.255730',
@@ -48,8 +48,8 @@ class LapanganSeeder extends Seeder
 
             DB::table('lapangan')->insert([
                'kode_lapangan' => 'LB-'.$j ,
-               'nama' => 'Lapangan Bawah',
-               'lokasi' => 'Bawah',
+               'nama' => 'Lapangan 3',
+               'lokasi' => '3',
                'kode_jadwal' => 'B'.$j,
                'lat' => '-5.376141',
                'lng' => '105.255585',
@@ -69,8 +69,8 @@ class LapanganSeeder extends Seeder
 
             DB::table('lapangan')->insert([
                'kode_lapangan' => 'LT-'.$j ,
-               'nama' => 'Lapangan Tengah',
-               'lokasi' => 'Tengah',
+               'nama' => 'Lapangan 2',
+               'lokasi' => '2',
                'kode_jadwal' => 'T'.$j,
                'lat' => '-5.376303',
                'lng' => '105.255432',

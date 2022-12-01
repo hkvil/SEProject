@@ -44,7 +44,7 @@
                 <p class="copyright pull-right">
                     &copy; <script>
                     document.write(new Date().getFullYear())
-                    // </script> <a href="#">Team Dayat</a>, Teknik Informatika - UIN JAKARTA
+                    // </script> <a href="#">Kelompok X<sub class="text-lowercase">n+1</sub></a>, Teknik Informatika - UIN JAKARTA
                 </p>
             </div>
         </footer>

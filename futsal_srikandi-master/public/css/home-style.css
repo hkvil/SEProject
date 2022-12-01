@@ -6,7 +6,6 @@ html, body {
     position: absolute;
     width: 60%;
     height: 100%;
-    background: url(/img/bg-bercak.jpg) no-repeat 50% 50%;
     z-index: -1;
     opacity: 0.4;
     margin-left: -10%;
