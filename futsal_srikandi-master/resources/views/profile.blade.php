@@ -154,7 +154,7 @@
                         <h4 class="header-text">Form Pemesanan</h4>
                         <div class="form-group" id="whatsapp">
                             <label for="nama">Nama</label>
-                            <input name="nama" type="text" pattern="[A-Za-z]" class="form-control" minlength="3" maxlength="15"  placeholder="Nama Lengkap" required>
+                            <input name="nama" type="text" class="form-control" minlength="3" maxlength="15"  placeholder="Nama Lengkap" required>
                         </div>               
                         <div class="form-group" id="whatsapp">
                             <label for="telp">No Whatsapp</label>
