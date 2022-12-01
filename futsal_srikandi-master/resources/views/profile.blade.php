@@ -91,47 +91,6 @@
         <div class="img-area"></div>
         <div class="banner-text">
             <h2>BOOKING LAPANGAN BADMINTON <br>LEBIH PRAKTIS</h2>
-        </div>
-        <div class="stat" id="stat">
-            <div class="content-box">
-                <br><br>
-                <div class="container">
-                    <div class="row text-center">
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-users"></i>
-                                <h2><span class="counter text-counter">800</span><span>+</span>
-                                </h2>
-                                <p>Pengguna</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-futbol"></i>
-                                <h2><span class="counter text-counter">3</span>
-                                </h2>
-                                <p>Lapangan</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-tshirt"></i>
-                                <h2><span class="counter text-counter">40</span>
-                                </h2>
-                                <p>Items</p>
-                            </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="stat-items">
-                                <i class="fas fa-clock"></i>
-                                <h2><span class="counter text-counter">48</span><span>+</span>
-                                </h2>
-                                <p>Jadwal</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
     </section>
 
     <section class="services-area" id="services">
@@ -161,22 +120,6 @@
                 <p>Menyediakan perlengakapan badminton dengan kualitas terbaik demi kenyamanan anda</p>
             </div>
         </div>
-    </section>
-
-    <!-- <section class="maps" id="maps">
-        <h3 class="header-text">Srikandi Venue</h3>
-        <p>Lokasi Futsal Srikandi tersebar pada beberapa lokasi </p>
-        <div class="container-map">
-            <?php
-			$dump = json_encode($dump, true);
-			echo '<div id="data">' . $dump . '</div>';
-
-			$lapangan = json_encode($lapangan, true);
-			echo '<div id="allData">' . $lapangan . '</div>';
-			?>
-            <div id="map"></div>
-        </div> -->
-    </section>
 
     <section class="newsletter" id="newsletter">
         <h3 class="header-text" style="color: white;">SCHEDULE</h3>
@@ -206,7 +149,6 @@
                 <h4 class="dif" style="color: white;">Kosong</h4>
             </div>
         </div>
->>>>>>> dayat
     </section>
 
     <section class="whangsaff">
@@ -276,8 +218,6 @@
     </script>
     <script src="/js/profile.js"></script>
     <script src="https://kit.fontawesome.com/3f4aa1c6f5.js" crossorigin="anonymous"></script>
-    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDdg3NKQlbc9sVcuo8aRzLZQLtPoLrPZsw&callback=loadMap"
-        async defer> -->
     </script>
     <!--   Core JS Files   -->
     <script src="js/jquery.3.2.1.min.js" type="text/javascript"></script>
@@ -289,13 +229,10 @@
     <!--  Notifications Plugin    -->
     <script src="js/bootstrap-notify.js"></script>
 
-    <!--  Google Maps Plugin    -->
-    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
-
     <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
     <script src="js/light-bootstrap-dashboard.js?v=1.4.0"></script>
 
-    <!-- datepicker from gijgo -->
+    <!-- Datepicker from gijgo -->
     <script src="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/js/gijgo.min.js" type="text/javascript">
     </script>
     <link href="https://cdn.rawgit.com/atatanasov/gijgo/master/dist/combined/css/gijgo.min.css" rel="stylesheet"
